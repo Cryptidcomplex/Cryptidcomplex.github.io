@@ -1,0 +1,515 @@
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bytesized&family=DotGothic16&family=Jacquard+12&family=Jacquard+24&family=Jacquarda+Bastarda+9&family=Pixelify+Sans:wght@400..700&family=Press+Start+2P&family=Rubik+Iso&family=Silkscreen:wght@400;700&family=Tiny5&display=swap');
+
+.press-start-2p-regular {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.pixelify-sans-<uniquifier> {
+  font-family: "Pixelify Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+.silkscreen-regular {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.silkscreen-bold {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.dotgothic16-regular {
+  font-family: "DotGothic16", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.tiny5-regular {
+  font-family: "Tiny5", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.jacquard-12-regular {
+  font-family: "Jacquard 12", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.rubik-iso-regular {
+  font-family: "Rubik Iso", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.jacquarda-bastarda-9-regular {
+  font-family: "Jacquarda Bastarda 9", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bytesized-regular {
+  font-family: "Bytesized", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.amatic-sc-regular {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.amatic-sc-bold {
+  font-family: "Amatic SC", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*colors
+bg: #96ad84
+text - dark: #20241d
+text - medium: #52783c
+text - light: #e9f5df
+accent - medium: #7f5da3
+accent - light: #d4c3e6
+
+/* Style */
+body {
+  background-color: #96ad84;
+  background: URL(https://i1.glitter-graphics.org/pub/515/515021ogut0u257m.gif);
+  font-family: "Silkscreen", "Courier New", monospace;
+  color: #20241d;
+  font-size:9px;
+  scrollbar-color: #173635 #96ad84;
+  cursor: url(Img_assets/cursor9.gif), auto;
+}
+h1 {
+  color: none;
+  font-family: "Press Start 2P", Helvetica, sans-serif;
+}
+p {
+  color: none; 
+}
+
+div { border: 1px dashed #173635;
+background-color: #b0cfcb;
+padding: 5px;
+width:initial;
+     
+  }
+.outsideborder{
+  border-image:  url('https://rxbbits.neocities.org/Img_assets/cowlborder.png') 14 /  14px / 0 round;
+    border-width:  10px;
+  background: none;
+    border-style:  solid; 
+  width:60%;
+  max-width:1000px;
+  margin:auto;
+  min-width:410px;
+
+  
+}
+.container {
+  background-color:#96ad84;
+  max-width:100%;
+  min-width: 400px;
+margin:auto;
+display:grid;
+grid-gap:5px;
+  grid:
+  "header header"
+  "nav nav"
+  "main sidebar"
+  "footer footer"
+    /1fr 150px;
+overflow:hidden;
+}
+
+.header { 
+  grid-area: header; 
+  background-color: none;
+  padding:5px;
+  text-align:center;
+  background-image: url(https://rxbbits.neocities.org/Img_assets/IMG_9187.gif);
+  background-size:100%;
+  color:white;
+  font-size:12px;
+  border:none;
+  height:150px;
+  display:flex;
+  align-items:center;
+justify-content:center;}
+
+.main {grid-area: main; 
+      overflow-y: hidden;
+      min-height:500px;
+      background:none;
+      padding:0px;
+ }
+
+
+
+/*sidebar nav*/
+/*container*/
+.sidebar{
+grid-area: sidebar; 
+background:none;
+padding:0px}
+/*navigation*/
+.Sidebarnavcontainer{
+  padding-left: 20px;
+  width:100%;
+  border:1px dashed;
+  overflow:hidden;
+
+}
+.sidebarnavheader { width:139px; height:20px; background:none; text-align:center;
+  font-size:12px; 
+ margin:-5px;
+
+}
+.sidebarnavitems{  list-style-image: url('Img_assets/tinyrotatinbun.gif'); font-size:12px;
+line-height:2em;
+margin-left:-15px;}
+.sidebarnavactiveitems{}
+.sidebarnavfooter {}
+
+/*extra sidebar content*/
+/*container*/
+.main2 {}
+
+
+/* more main content*/
+.main2 {background:none;}
+
+
+
+/*aside */
+.aside { grid-area: aside;
+         border-image:  url('https://rxbbits.neocities.org/Img_assets/windowborder2.png') 14 /  14px / 0 round;
+    border-width:  10px;
+    border-style:  solid; 
+         height:700px;
+         overflow-y:hidden;
+         overflow-x:hidden;
+         
+}
+
+@media screen and (max-width: 400px) {
+  .aside {
+    height:370px;
+    flex-direction:row;
+    overflow-y:scroll;
+  }
+}
+/*paga contents */
+    .maincontent{  grid-area:maincontent;
+      border-image:  url('https://rxbbits.neocities.org/Img_assets/windowborder2.png') 12 /  12px / 0 round;
+    border-width:  10px;
+    border-style:  solid; 
+  overflow-y:auto;}
+
+
+.sidebarimg{
+  width:100%;
+  max-width:250px;
+  min-width:150px;
+  float:left;
+  margin:-5px;
+}
+
+.stampcontainer{
+  
+  flex-wrap:wrap;
+  background:none;
+  border:none;
+  justify-content:center;
+  padding:0px;
+}
+
+/*footer*/
+.footer {
+  grid-area: footer; 
+}
+/*navigation bar */
+.nav { overflow:hidden;
+      grid-area: nav; 
+     display:flex;
+justify-content: space-between;
+  min-height:35px;
+padding:0px;
+font-size:13px;
+border:none;
+     overflow:initial;}
+
+@media screen and (max-width: 400px) {
+  .nav {
+    
+    flex-direction:column;
+  }
+}
+.navbuttons {
+  width:16.6%;
+              background-color: #526e6d;
+          border:solid 2px #142b29;
+              text-align:center;
+   position: relative;
+  display: inline-block;
+  padding:0;
+  color:#142b29;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+  
+  
+}
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #526e6d;
+  width: 100%;
+  z-index: 1;
+  align-self:flex-start;
+  padding:0px;
+  top:32px;
+  border-top: 2px solid #142b29;
+  border-left: 2px solid #142b29;
+  border-right: 2px solid #142b29;
+
+/*dropdown links*/
+  .dropdownbuttons {
+    background-color:#526e6d;
+    max-width:100%;
+    max-height: 35px;
+    border:none;
+    border-bottom:2px solid #142b29;
+  
+    color:#142b29;
+     a:link {
+   width:100%;
+  color: black ;
+  text-decoration: none;
+
+ }
+
+   
+  }
+  .dropdownbuttons:hover { background: url(https://i4.glitter-graphics.org/pub/306/306534sl3qt670wv.gif);
+    color:#e9f5df;
+                           border:2px solid white;
+  }
+}
+
+
+
+
+@media screen and (max-width: 400px) {
+  .navbuttons {width:100%;
+              height:100%;}}
+
+.navbuttons:hover {background-color: #96ad84;
+                   background: url(https://i4.glitter-graphics.org/pub/306/306534sl3qt670wv.gif);
+                  color: #e9f5df;
+                   .dropdown-content {display: block;}
+}
+.dropdown-content:hover {display:block;}
+/*links*/
+a:link {
+  color: #52783c;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #52783c;
+}
+
+/* mouse over link */
+a:hover {
+  color: #e9f5df;
+  background-color: none;
+}
+
+/* selected link */
+a:active {
+  color: #7f5da3;
+}
+
+iframe {border:none;
+  width:99%;
+  height:99%;
+
+}
+
+/*library*/
+.shelf {
+    background: url("Img_assets/shelf.png");
+    background-color: #5d1c27;
+    padding: 0px 0x;
+    outline: #5d1c27 solid 5px;
+    border: #863133 solid 2px;
+    position: relative;
+    margin: 10px 10px;
+    image-rendering: pixelated;
+    line-height: 20px;
+   z-index:0;
+    float:none;
+    display:flex;
+    flex-wrap: wrap-reverse;
+    flex-direction: row;
+    align-items: flex-end;
+    position:relative;
+    
+  }
+
+.librarycard {
+float:right;
+margin-top:-15px;
+
+}
+
+.librarybooks {
+  position:relative;
+margin-right:4px;
+  align-self:flex-end;
+z-index:0;
+
+}
+.librarybooks:hover {height:170px;
+z-index:1;
+margin-left:-33px;
+margin-top: -50px;
+}
+
+.goodreadswidget {font-family:"jacquard-12";
+height:200px;
+width:220px;
+}
+
+/*ocpage */
+.ocstorytitle{
+ margin:auto;
+ max-width:700px;
+ width:90%;
+ text-align: center;
+ background-color: #96ad84;
+ font-family:"jacquard 12";
+ font-size: 30px;
+ Background-size:100%;
+}
+.ocminicontainer {
+  margin:auto;
+display:flex;
+width:90%;
+max-width:500px;
+padding:0px;
+}
+
+.ocpfp{ width:100px; height:100px;
+  background-size:100%;
+  border:none;
+}
+.ocminiinfo {flex-grow:1;
+  border:none;
+
+}
+
+.homebunny {
+  width:80px; height:70px;
+  right:0;
+  bottom:0;
+  position:fixed;
+  background:none;
+  color:#e9f5df;
+  border:none;
+  text-align: center;
+  font-size:10px;
+/* graphics
+green star blinker bg
+https://dl2.glitter-graphics.net/pub/1011/1011682lx1qh28bcd.gif 
+pink glitter sparkles
+https://i1.glitter-graphics.org/pub/1028/1028701nidgo5cnnh.gif
+falling pink hearts transparent
+https://i10.glitter-graphics.org/pub/707/707570g7y1zfvon9.gif
+pink sparkle clouds
+https://i5.glitter-graphics.org/pub/2737/2737165nj51irfccb.gif
+purple sparkle stars
+https://i6.glitter-graphics.org/pub/604/604796u41oppf73o.gif
+rainbow sparkle texture
+https://i4.glitter-graphics.org/pub/1312/1312404pgia1fdcly.gif
+strawberrystripes
+https://i1.glitter-graphics.org/pub/2288/2288501bzoygbwko1.gif
+falling snow transparent
+https://i1.glitter-graphics.org/pub/707/707701bsmzyz7zey.gif
+emo pink stripes
+https://i3.glitter-graphics.org/pub/542/542073lisnq8hmcb.gif
+pinkpurple heart sparkles
+https://i10.glitter-graphics.org/pub/1028/1028680pvfit0awg1.gif
+purple bubbles
+https://i3.glitter-graphics.org/pub/653/653693eoysu8a79u.gif
+greenpink picnic
+https://i4.glitter-graphics.org/pub/966/966814i8pz6zikwc.gif
+transparent falling icedcream
+https://i6.glitter-graphics.org/pub/590/590966tdltan40f8.gif
+greenhearts sparkle
+https://i8.glitter-graphics.org/pub/180/180288h7ikj7imei.gif
+green sparkly cateye
+https://i5.glitter-graphics.org/pub/1406/1406025jqr9bllt1u.gif
+sparkly clover
+https://dl.glitter-graphics.com/pub/3543/3543336s5ettmqsdb.gif
+more sparkly clover
+https://dl.glitter-graphics.com/pub/3511/3511995jy16gl6ou5.gif
+green pawprints
+https://i3.glitter-graphics.org/pub/1473/1473953nrx7zm18o1.gif
+blueswirl glitter
+https://i5.glitter-graphics.org/pub/2110/2110625bszbljfngq.gif
+green glitter trees
+https://dl.glitter-graphics.com/pub/3512/3512003ltrd2o01f9.gif
+dark green glitter
+https://dl.glitter-graphics.com/pub/3446/3446118kk7fcm7ea7.gif
+green noise
+https://i3.glitter-graphics.org/pub/1852/1852783up0mcq730r.gif
+dark green noise
+https://i8.glitter-graphics.org/pub/1298/1298758vljbfv5ppi.gif
+black with green glitter
+https://dl.glitter-graphics.com/pub/3776/3776647kapp5t386t.gif
+muted green noise
+https://i3.glitter-graphics.org/pub/519/519853mk1ggjo3po.gif
+glitter green stripe
+https://dl.glitter-graphics.com/pub/3293/3293626oip6sf7iwn.gif
+light green noise
+https://i1.glitter-graphics.org/pub/1852/1852781dohrsqsf8s.gif
+purple green argyle
+https://dl.glitter-graphics.com/pub/3129/3129999wjejiv8lh3.gif
+dark green mini sparkle
+https://i4.glitter-graphics.org/pub/306/306534sl3qt670wv.gif
+green slowmoving star
+https://i9.glitter-graphics.org/pub/2649/2649579xe2kurmo3t.gif
+green space stars
+https://i1.glitter-graphics.org/pub/515/515021ogut0u257m.gif
+green stripe glitter
+https://i2.glitter-graphics.org/pub/1253/1253902csq4nvm7p1.gif
+bluegreensparkle
+https://i7.glitter-graphics.org/pub/482/482217ilx3ybpsi6.gif
+falling leaves transluscent
+https://i10.glitter-graphics.org/pub/762/762900jp74tokzuh.gif
+
+
+!!! image border
+border: 1px solid;
+border-image-source: url(https://i5.glitter-graphics.org/pub/2110/2110625bszbljfngq.gif);
+border-image-repeat: round;
+border-image-slice: 1;
+border-image-width: 2px;
+
+
+*/
+
+
+
+
+
